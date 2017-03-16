@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cuileikun.androidandjava">
+
+    <!-- start-极光推送- Required 一些系统要求的权限，如访问网络等 -->
+    <permission
+        android:name="com.qk365.housekeeper.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.qk365.housekeeper.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- end极光推送end -->
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 读取电话号码相关权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <!-- 拍照权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    "
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 拨打电话权限 add by clk on -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 拨打电话权限 add by clk off -->
+    <!-- 短信验证需要的权限start -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 短信验证需要的权限stop -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 1JAVA基础 -->
+        <activity android:name=".activity.JavaActivity" />
+        <!-- 2android基础 -->
+        <activity android:name=".activity.AndroidBaseActivity" />
+        <!-- 3android项目 -->
+        <activity android:name=".activity.AndroidProgramActivity" />
+        <!-- 4传音项目 -->
+        <activity android:name=".activity.TranssionProgramActivity" />
+        <!-- 5青客项目 -->
+        <activity android:name=".activity.QKProgramActivity" />
+        <!-- 6同学项目 -->
+        <activity android:name=".activity.BrotherProgramActivity" />
+        <!-- 7热门技术点 -->
+        <activity android:name=".activity.HotTechnologyActivity" />
+        <!-- 8常用三方类库 -->
+        <activity android:name=".activity.ThirdLiarbryActivity" />
+        <!-- 8.1短信验证界面 -->
+        <activity android:name=".activity.thirdliarbry.SmsVerificationActivity" />
+        <!-- 9大神demo -->
+        <activity android:name=".activity.DaShenDemoActivity" />
+        <!-- 7热门技术点 自定义listView -->
+        <activity android:name=".activity.hottechnology.CustomListViewActivity" />
+        <activity android:name=".activity.hottechnology.TimeDispalyRlActivity" />
+        <activity android:name=".activity.brotherprogram.FootBallActivity" />
+        <activity android:name=".activity.hottechnology.TestActivity" />
+        <activity android:name=".activity.hottechnology.ReportPictureActivity" />
+        <activity android:name=".view.BigImageViewActivity" />
+        <activity android:name=".activity.hottechnology.SecondSubmitActivity" />
+        <activity android:name=".view.DisplayImageActivity" />
+        <activity android:name=".activity.hottechnology.ProgramFrameActivity" />
+        <activity android:name=".activity.hottechnology.InterfaceFrameActivity" />
+        <activity android:name=".activity.hottechnology.InterfaceFrameFirstActivity" />
+        <activity android:name=".activity.hottechnology.InterfaceFrameSecondActivity" />
+        <activity android:name=".activity.hottechnology.NetWorkFrameActivity" />
+        <!-- 8.1短信验证配置start -->
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 8.1短信验证配置stop -->
+        <activity android:name=".activity.thirdliarbry.SmsVerificationsActivity"/>
+    </application>
+
+</manifest>

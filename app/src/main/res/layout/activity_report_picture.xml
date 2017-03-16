@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><!--房管员异常  凭证上报-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <com.qk.applibrary.widget.TopbarView
+        android:id="@+id/top_bar_view"
+        style="@style/fill_wrap"
+        android:layout_alignParentTop="true" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/top_bar_view"
+        android:background="#d2d2d2" />
+
+    <LinearLayout
+        android:id="@+id/voucher_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view3"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/wrap_fill"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:gravity="center"
+            android:text="*"
+            android:textColor="#ff0000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="凭证照片 (最多上传5张)"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_95_dip"
+        android:layout_below="@+id/voucher_picture"
+        android:layout_marginTop="@dimen/dimen_10_dip"
+        android:background="#ffffff"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/photo_container_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_85_dip"
+            android:layout_marginLeft="@dimen/dimen_13_dip"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/btn_summit_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hsv_photo"
+        android:background="#FF8619"
+        android:text="第二种方式上传"
+        android:textColor="#ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/submit_bottom_ll"
+        style="@style/fill_fill"
+        android:layout_below="@id/hsv_photo"
+        android:background="#f1f1f1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_43_dip"
+            android:layout_alignParentBottom="true"
+            android:background="#FF8619"
+            android:gravity="center"
+            android:text="上传照片提交"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

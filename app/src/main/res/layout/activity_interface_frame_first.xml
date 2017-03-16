@@ -1,0 +1,226 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".activity.hottechnology.InterfaceFrameFirstActivity">
+
+    <com.qk.applibrary.widget.TopbarView
+        android:id="@+id/top_bar_view"
+        style="@style/wrap_wrap" />
+
+    <View
+        android:id="@+id/first_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1_dip"
+        android:layout_below="@+id/top_bar_view"
+        android:background="#d2d2d2" />
+
+    <LinearLayout
+        android:id="@+id/ll_qq"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_20_dip"
+        android:layout_below="@+id/first_line"
+        android:layout_marginTop="@dimen/dimen_11_dip"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/first_item_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/first_item_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="北京"
+                android:textColor="#02ab82"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_item_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/second_item_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="上海"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third_item_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/third_item_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="河北"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fourth_item_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fourth_item_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="河南"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fifth_item_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fifth_item_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="天津"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sixth_item_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sixth_item_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="海南"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/down_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1_dip"
+        android:layout_below="@+id/ll_qq"
+        android:background="#d2d2d2" />
+
+    <LinearLayout
+        android:id="@+id/ll_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2_dip"
+        android:layout_above="@id/down_divider"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_divider_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#02ab82"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_divider_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#02ab82"
+            android:gravity="center"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_divider_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#02ab82"
+            android:gravity="center"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_divider_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#02ab82"
+            android:gravity="center"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_divider_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#02ab82"
+            android:gravity="center"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_divider_6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#02ab82"
+            android:gravity="center"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/test_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/back_main"
+        android:layout_below="@+id/ll_qq"
+        android:layout_marginTop="@dimen/dimen_1_dip" />
+
+    <include
+        android:id="@+id/back_main"
+        layout="@layout/back_main" />
+</RelativeLayout>
