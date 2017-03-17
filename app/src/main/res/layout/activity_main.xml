@@ -17,7 +17,7 @@
             android:textSize="@dimen/dimen_20_dip"
             android:textColor="@color/color_main_title"
             android:gravity="center"
-            android:text="IntegratedTechnology"
+            android:text="GitManagerCode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </RelativeLayout>
