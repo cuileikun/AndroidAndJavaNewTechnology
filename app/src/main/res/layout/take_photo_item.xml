@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/wrap_wrap"
+    android:paddingRight="@dimen/dimen_10_dip"
+    android:orientation="horizontal"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <com.qk.applibrary.widget.DownloadImageView
+            android:id="@+id/photo_iv"
+            android:layout_width="@dimen/dimen_65_dip"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:src="@drawable/default_photo"
+            android:layout_height="@dimen/dimen_85_dip" />
+        <ImageView
+            android:id="@+id/photo_delete"
+            android:layout_width="@dimen/dimen_20_dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/delete"
+            android:visibility="invisible"
+            android:layout_marginBottom="@dimen/dimen_10_dip"
+            android:layout_marginLeft="@dimen/dimen_55_dip"
+            android:layout_height="@dimen/dimen_20_dip" />
+        </RelativeLayout>
+
+</LinearLayout>

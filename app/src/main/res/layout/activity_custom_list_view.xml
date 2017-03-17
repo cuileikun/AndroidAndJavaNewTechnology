@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.qk.applibrary.widget.TopbarView
+        android:id="@+id/top_bar_view"
+        style="@style/fill_wrap" />
+
+    <RelativeLayout
+        android:id="@+id/search"
+        style="@style/fill_wrap"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_20_dip"
+        android:layout_marginTop="@dimen/dimen_10_dip"
+        >
+
+        <TextView
+            android:id="@+id/search_tv"
+            style="@style/wrap_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="搜索"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:id="@+id/search_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_38_dip"
+            android:layout_marginRight="@dimen/dimen_13_dip"
+            android:layout_toLeftOf="@+id/search_tv"
+            android:background="@drawable/search_board">
+
+            <ImageView
+                android:id="@+id/search_iv"
+                android:layout_width="@dimen/dimen_18_dip"
+                android:layout_height="@dimen/dimen_18_dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:src="@drawable/search_icon" />
+
+            <EditText
+                android:id="@+id/key_et"
+                style="@style/fill_fill"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_toRightOf="@+id/search_iv"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入客户姓名或电话"
+                android:textColor="#999999"
+                android:textColorHint="#aaaaaa"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/delete_iv"
+                android:layout_width="@dimen/dimen_18_dip"
+                android:layout_height="@dimen/dimen_18_dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/dimen_5_dip"
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

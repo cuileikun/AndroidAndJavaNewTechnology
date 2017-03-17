@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <TextView
+            android:id="@+id/tv_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dimen_15_dip"
+            android:text="历史记录" />
+
+        <View
+            android:id="@+id/line_one"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_record"
+            android:background="#d2d2d2"></View>
+
+        <com.example.cuileikun.androidandjava.activity.CustomView.MyListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_one" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_two"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/listview"
+            android:background="#d2d2d2"></View>
+
+        <TextView
+            android:id="@+id/clears"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/listview"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dimen_15_dip"
+            android:gravity="center_horizontal"
+            android:text="清除历史记录" />
+    </RelativeLayout>
+</ScrollView>

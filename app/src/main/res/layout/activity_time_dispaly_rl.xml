@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#008000"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cuileikun.androidandjava.activity.BrotherProgramActivity">
+
+
+    <TextView
+        android:id="@+id/tv_nian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="" />
+    <TextView
+        android:id="@+id/tv_yue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="" />
+    <TextView
+        android:id="@+id/tv_ri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="" />
+
+
+    <TextView
+        android:id="@+id/tv_shi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_fen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_miao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="" />
+
+
+    <TextView
+        android:id="@+id/current_miao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="现在时间对应的毫秒值" />
+    <TextView
+        android:id="@+id/checkout_miao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="退房日期对应的毫秒值" />
+
+    <TextView
+        android:id="@+id/onedayremain_miao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="离过完这一天剩余的毫秒值" />
+
+    <TextView
+        android:id="@+id/should_show_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:text="tv_nian2"
+        android:id="@+id/tv_nian2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="tv_yue2"
+        android:id="@+id/tv_yue2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="tv_ri2"
+        android:id="@+id/tv_ri2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView  android:text="tv_shi2"
+        android:id="@+id/tv_shi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="tv_fen2"
+        android:id="@+id/tv_fen2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="tv_miao2"
+        android:id="@+id/tv_miao2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    tools:context=".activity.hottechnology.InterfaceFrameSecondActivity">
+
+    <com.qk.applibrary.widget.TopbarView
+        android:id="@+id/top_bar_view"
+        style="@style/wrap_wrap" />
+
+    <com.example.cuileikun.androidandjava.view.NoScrollViewPager
+        android:id="@+id/test_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar_view"
+        android:layout_marginTop="@dimen/dimen_1_dip" />
+
+    <RadioGroup
+        android:id="@+id/main_radio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#0C2239"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="2dp">
+
+        <RadioButton
+            android:id="@+id/rb_search"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_ball"
+            android:text="约球" />
+
+        <RadioButton
+            android:id="@+id/rb_store"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_team"
+            android:text="球队" />
+
+        <RadioButton
+            android:id="@+id/rb_borrowed"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_find"
+            android:text="发现" />
+
+        <RadioButton
+            android:id="@+id/rb_help"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_me"
+            android:text="我" />
+    </RadioGroup>
+
+</RelativeLayout>
