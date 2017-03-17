@@ -21,8 +21,6 @@ public class AndroidBaseActivity extends QkActivity {
     @Override
     public void initData() {
         topbarView.setTopbarTitle("3.0Android基础列表");
-
-
     }
 
     @Override
