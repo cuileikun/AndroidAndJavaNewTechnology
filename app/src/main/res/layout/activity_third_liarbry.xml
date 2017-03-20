@@ -96,7 +96,7 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/day_three_rl"
+                android:id="@+id/three_share_rl"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_30_dip"
                 android:layout_marginLeft="@dimen/dimen_13_dip"

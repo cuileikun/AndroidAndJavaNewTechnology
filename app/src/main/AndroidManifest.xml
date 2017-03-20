@@ -124,6 +124,7 @@
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <!-- 8.1短信验证配置stop -->
         <activity android:name=".activity.thirdliarbry.SmsVerificationsActivity"/>
+        <activity android:name=".activity.thirdliarbry.LocateActivity"/>
     </application>
 
 </manifest>

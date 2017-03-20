@@ -12,8 +12,8 @@ public class QkConstant {
     public static final int PAGE_SIZE = 10;//每页加载10条
     public static final String QK_LOG_DIRECTORY = "/qk/log";//日志日志目录
     public static final String PHOTO_LOG_DIRECTORY = "/qk/photo";//图片日志目录
-    public static final String DB_Name="HouseKeeper.db";
-    public static final String PUSH_TOKEN="PUSH_TOKEN";
+    public static final String DB_Name = "HouseKeeper.db";
+    public static final String PUSH_TOKEN = "PUSH_TOKEN";
     public static final String CODE = "utf-8";
     public static final String URLPOSITION = "position";
     public static final String TIMES = "times";
@@ -54,13 +54,11 @@ public class QkConstant {
         public static final String SERVERS_CENTER_ID = "serves_center_id";//登录房管员所属的服务中心id
         public static final String ERWEIMA = "ermawei_url";//二维码下载链接
         public static final String USER_POSITION = "user_position";//0:房管员 1:服务中心经理 2.分公司经理
-        public static final String VACANTDAYCON="vacantDayCon"; // 0.待租房间 1.空置【30-60】天 2.空置【60-90】天 3.空置90天及以上
+        public static final String VACANTDAYCON = "vacantDayCon"; // 0.待租房间 1.空置【30-60】天 2.空置【60-90】天 3.空置90天及以上
         public static String IS_REMEMBER_PASSWORD = "isRememberPassword";
         public static final String CHANGLIANGZHI = "changliangzhi";//测试常量值
 
     }
-
-
 
 
     /**
@@ -122,7 +120,7 @@ public class QkConstant {
     /**
      * 试算器webview
      */
-    public static final class WebDef{
+    public static final class WebDef {
         public static final String WEB_URL = "web_url";
         public static final String WEB_NAME = "web_name";
         //0:从首页进入的试算器  1:销售成本  2:降价和空置  3:合同成交
@@ -141,22 +139,22 @@ public class QkConstant {
     /**
      * 排行榜传递参数常量
      */
-    public static final class RankingListIntentDef{
+    public static final class RankingListIntentDef {
         public static final String RANKING_INFO = "ranking_info";//排行榜信息
         public static final String CURRENT_DATE = "current_date";//当前日期
     }
 
 
     //下载歌曲的路径
-    public static final String DOWN_SONGS_SAVE_PATH= CommonUtil.getSDCardPath() + "/qk/SONGS";
+    public static final String DOWN_SONGS_SAVE_PATH = CommonUtil.getSDCardPath() + "/qk/SONGS";
 
     //下载歌曲的路径
-    public static final String DOWN_SONGS_UPZIP_PATH= CommonUtil.getSDCardPath() + "/qk/upzip";
+    public static final String DOWN_SONGS_UPZIP_PATH = CommonUtil.getSDCardPath() + "/qk/upzip";
 
     //下载歌曲的歌曲名字存放
-    public static final String DOWN_SONGS_SAVE_NAME= "songs.zip";
+    public static final String DOWN_SONGS_SAVE_NAME = "songs.zip";
 
-    public static final class History{
+    public static final class History {
         public static final String SEARCHHISTORY = "search_history_servicecenter";
         public static final String ACCOUNT = "account";
         public static final String ACCOUNTDETAIL = "accountDetail";
@@ -167,29 +165,37 @@ public class QkConstant {
         public static final String FGYStateMentSEARCHHISTORY = "search_history_fyg_statement";
 
     }
+
     //分公司异常
-    public static final class ExceptionCompany{
+    public static final class ExceptionCompany {
         public static final String WAITEXAMINATIONDETAIL = "wait_examination_detail";  //9.1.1审批
         public static final String HISTORYDETAIL = "history_detail";  //9.1.2详情查看
 
     }
 
     //运营中心异常
-    public static final class ExceptionOperater{
+    public static final class ExceptionOperater {
         public static final String WAITEXAMINATIONDETAIL = "wait_examination_detail";  //9.1.1审批
         public static final String HISTORYDETAIL = "history_detail";                   //9.1.2详情查看
-        public static final int UPDATEADJUSTPRICE=1111;
+        public static final int UPDATEADJUSTPRICE = 1111;
     }
+
     //服务中心审批
-    public static final class checkoutServiceCenter{
+    public static final class checkoutServiceCenter {
         public static final String CHECKOUTENTITY = "checkoutentity";
         public static final String SALESLISTENTITY = "salesListEntity";
     }
 
     //房管员
-    public static final class checkoutFgy{
+    public static final class checkoutFgy {
         public static final String FGYCHECKOUTENTITY = "checkoutentity";
+
         public static final String YUANCHENGYANSHOUPACKAGENAME = "com.qk365.remoteacceptance";
+
+        //百度地图官方demo的包名
+        public static final String BAIDUMAPSDKDEMO = "baidumapsdk.demo";
+        //三方分享CSDN demo的包名
+        public static final String SHAREDEMO = "com.example.cuisharesdktest";
     }
 
 }

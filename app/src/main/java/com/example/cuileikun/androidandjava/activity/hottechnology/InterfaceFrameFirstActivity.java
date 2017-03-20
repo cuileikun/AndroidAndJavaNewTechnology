@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Handler;
-import android.os.Message;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -12,7 +11,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.cuileikun.androidandjava.R;
-import com.example.cuileikun.androidandjava.activity.Constant.QkConstant;
 import com.example.cuileikun.androidandjava.activity.MainActivity;
 import com.example.cuileikun.androidandjava.adapter.CustomViewPagerAdapter;
 import com.example.cuileikun.androidandjava.fragment.BeiJingFragment;
@@ -24,8 +22,6 @@ import com.example.cuileikun.androidandjava.fragment.TianJinFragment;
 import com.example.cuileikun.androidandjava.fragment.base.AddressFragment;
 import com.example.cuileikun.androidandjava.fragment.base.QKFragmentActivity;
 import com.qk.applibrary.listener.TopbarImplListener;
-import com.qk.applibrary.util.CommonUtil;
-import com.qk.applibrary.util.SharedPreferencesUtil;
 import com.qk.applibrary.widget.TopbarView;
 
 import java.util.ArrayList;
@@ -79,19 +75,19 @@ public class InterfaceFrameFirstActivity extends QKFragmentActivity implements V
 
         mContext = this;
         mInstance = this;
-        handler = new Handler() {
-            @Override
-            public void handleMessage(Message msg) {
-                super.handleMessage(msg);
-                switch (msg.what) {
-                    case 66:
-                        String setting = SharedPreferencesUtil.getSetting(QkConstant.SharedPreferencesKeyDef.FILE_NAME, mContext,
-                                QkConstant.SharedPreferencesKeyDef.CHANGLIANGZHI);
-                        String userId=setting;
-                        CommonUtil.sendToast(mContext,userId);
-                }
-            }
-        };
+//        handler = new Handler() {
+//            @Override
+//            public void handleMessage(Message msg) {
+//                super.handleMessage(msg);
+//                switch (msg.what) {
+//                    case 66:
+//                        String setting = SharedPreferencesUtil.getSetting(QkConstant.SharedPreferencesKeyDef.FILE_NAME, mContext,
+//                                QkConstant.SharedPreferencesKeyDef.CHANGLIANGZHI);
+//                        String userId=setting;
+//                        CommonUtil.sendToast(mContext,userId);
+//                }
+//            }
+//        };
         topbarView = (TopbarView) findViewById(R.id.top_bar_view);
         first_item_rl = (LinearLayout) findViewById(R.id.first_item_rl);
         second_item_rl = (LinearLayout) findViewById(R.id.second_item_rl);
@@ -122,7 +118,7 @@ public class InterfaceFrameFirstActivity extends QKFragmentActivity implements V
         mHeBeiFragment = new HeBeiFragment();
         mHeNanFragment = new HeNanFragment();
         mTianJinFragment = new TianJinFragment();
-        mHaiNanFragment = new HaiNanFragment(handler,mContext);
+        mHaiNanFragment = new HaiNanFragment();
         fragments.add(mBeiJingFragment);
         fragments.add(mShangHaiFragment);
         fragments.add(mHeBeiFragment);
