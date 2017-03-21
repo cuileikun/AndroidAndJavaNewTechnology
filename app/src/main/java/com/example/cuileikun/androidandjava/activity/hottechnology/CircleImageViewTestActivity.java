@@ -10,7 +10,7 @@ import com.qk.applibrary.activity.QkActivity;
 /**
  * 作者：popular cui
  * 时间：2017/3/21 14:06
- * 功能:
+ * 功能:CircleImageView  圆角图片
  */
 public class CircleImageViewTestActivity extends QkActivity{
 

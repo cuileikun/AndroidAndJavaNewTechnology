@@ -4,14 +4,13 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.cuileikun.androidandjava.R;
 import com.qk.applibrary.activity.QkActivity;
 
 /**
  * 作者：popular cui
  * 时间：2017/3/21 13:56
- * 功能:
+ * 功能:PhtotView 随手指移动而缩放图片大小的类库
  */
 public class PhtotViewTestActivity extends QkActivity{
 
