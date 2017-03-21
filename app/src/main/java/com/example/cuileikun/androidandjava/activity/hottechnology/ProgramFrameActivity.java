@@ -18,6 +18,7 @@ public class ProgramFrameActivity extends QkActivity implements View.OnClickList
     private Context mContext;
     private RelativeLayout interface_frame_rl;//1,界面框架
     private RelativeLayout network_frame_rl;//3，网络请求框架
+    private RelativeLayout image_processing_framework_rl;//图片处理框架
 
     @Override
     public int getLayoutId() {
@@ -29,6 +30,7 @@ public class ProgramFrameActivity extends QkActivity implements View.OnClickList
     public void initViews() {
         interface_frame_rl = (RelativeLayout) findViewById(R.id.interface_frame_rl);
         network_frame_rl = (RelativeLayout) findViewById(R.id.network_frame_rl);
+        image_processing_framework_rl = (RelativeLayout) findViewById(R.id.image_processing_framework_rl);
     }
 
     @Override
@@ -41,6 +43,7 @@ public class ProgramFrameActivity extends QkActivity implements View.OnClickList
     public void addListeners() {
         interface_frame_rl.setOnClickListener(ProgramFrameActivity.this);
         network_frame_rl.setOnClickListener(ProgramFrameActivity.this);
+        image_processing_framework_rl.setOnClickListener(ProgramFrameActivity.this);
     }
 
     @Override
@@ -51,6 +54,9 @@ public class ProgramFrameActivity extends QkActivity implements View.OnClickList
                 break;
             case R.id.network_frame_rl://3，网络请求框架
                 startActivity(new Intent(mContext,NetWorkFrameActivity.class));
+                break;
+            case R.id.image_processing_framework_rl://5，图片处理框架
+                startActivity(new Intent(mContext,ImageProcessFrameworkActivity.class));
                 break;
         }
     }

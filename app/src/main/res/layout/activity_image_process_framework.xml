@@ -17,7 +17,7 @@
             android:textSize="@dimen/dimen_20_dip"
             android:textColor="@color/color_main_title"
             android:gravity="center"
-            android:text="常用框架"
+            android:text="常用图片处理框架"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </RelativeLayout>
@@ -46,7 +46,7 @@
                     android:orientation="vertical">
 
                     <RelativeLayout
-                        android:id="@+id/interface_frame_rl"
+                        android:id="@+id/glide_rl"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/dimen_132_dip"
                         android:background="@drawable/look_reconnaissance_bg"
@@ -55,7 +55,7 @@
                         <TextView
                             style="@style/match_match"
                             android:gravity="center"
-                            android:text="1界面框架"
+                            android:text="1，Glide"
                             android:textColor="#ffffff"
                             android:textSize="14sp" />
 
@@ -71,7 +71,7 @@
                         <TextView
                             style="@style/match_match"
                             android:gravity="center"
-                            android:text="3网络请求框架"
+                            android:text="002"
                             android:textColor="#ffffff"
                             android:textSize="14sp" />
 
@@ -88,7 +88,7 @@
                         <TextView
                             style="@style/match_match"
                             android:gravity="center"
-                            android:text="5图片处理框架"
+                            android:text="003"
                             android:textColor="#ffffff"
                             android:textSize="14sp" />
 

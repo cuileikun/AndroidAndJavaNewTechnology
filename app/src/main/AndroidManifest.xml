@@ -98,8 +98,6 @@
         <activity android:name=".activity.HotTechnologyActivity" />
         <!-- 8常用三方类库 -->
         <activity android:name=".activity.ThirdLiarbryActivity" />
-        <!-- 8.1短信验证界面 -->
-        <activity android:name=".activity.thirdliarbry.SmsVerificationActivity" />
         <!-- 9大神demo -->
         <activity android:name=".activity.DaShenDemoActivity" />
         <!-- 7热门技术点 自定义listView -->
@@ -116,6 +114,9 @@
         <activity android:name=".activity.hottechnology.InterfaceFrameFirstActivity" />
         <activity android:name=".activity.hottechnology.InterfaceFrameSecondActivity" />
         <activity android:name=".activity.hottechnology.NetWorkFrameActivity" />
+        <activity android:name=".activity.hottechnology.ImageProcessFrameworkActivity"/>
+        <activity android:name=".activity.hottechnology.GlideTestActivitry"/>
+        <activity android:name=".activity.hottechnology.GuoLinGlideFirstActivity"/>
         <!-- 8.1短信验证配置start -->
         <activity
             android:name="com.mob.tools.MobUIShell"

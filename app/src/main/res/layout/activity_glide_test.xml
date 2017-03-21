@@ -20,7 +20,7 @@
             android:orientation="vertical">
 
             <RelativeLayout
-                android:id="@+id/sms_verification_rl"
+                android:id="@+id/guolin_glide_test_first"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_30_dip"
                 android:layout_marginLeft="@dimen/dimen_13_dip"
@@ -44,7 +44,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/room_iv"
                     android:gravity="center_vertical"
-                    android:text="1，短信验证"
+                    android:text="郭霖Glide系列第一篇"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -82,7 +82,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/erery_day_reconnoitore_list_iv"
                     android:gravity="center_vertical"
-                    android:text="2，极光推送"
+                    android:text="day02"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -96,7 +96,7 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/three_share_rl"
+                android:id="@+id/day_three_rl"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_30_dip"
                 android:layout_marginLeft="@dimen/dimen_13_dip"
@@ -120,7 +120,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/belt_iv"
                     android:gravity="center_vertical"
-                    android:text="3，三方分享"
+                    android:text="day03"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -134,7 +134,7 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/rl_baidu_locate"
+                android:id="@+id/report_picture"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_30_dip"
                 android:layout_marginLeft="@dimen/dimen_13_dip"
@@ -158,7 +158,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv"
                     android:gravity="center_vertical"
-                    android:text="4，百度地图"
+                    android:text="day04"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -196,7 +196,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv5"
                     android:gravity="center_vertical"
-                    android:text="5，高德地图"
+                    android:text="day05"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -234,7 +234,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv6"
                     android:gravity="center_vertical"
-                    android:text="6，微信支付"
+                    android:text="day06"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -272,7 +272,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv7"
                     android:gravity="center_vertical"
-                    android:text="7，支付宝支付"
+                    android:text="day07"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -310,7 +310,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv8"
                     android:gravity="center_vertical"
-                    android:text="8，二维码"
+                    android:text="day08"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -348,7 +348,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv9"
                     android:gravity="center_vertical"
-                    android:text="9，音频视频"
+                    android:text="day09"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -386,7 +386,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv10"
                     android:gravity="center_vertical"
-                    android:text="10，直播"
+                    android:text="day10"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
