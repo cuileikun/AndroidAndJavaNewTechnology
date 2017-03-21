@@ -117,6 +117,9 @@
         <activity android:name=".activity.hottechnology.ImageProcessFrameworkActivity"/>
         <activity android:name=".activity.hottechnology.GlideTestActivitry"/>
         <activity android:name=".activity.hottechnology.GuoLinGlideFirstActivity"/>
+        <activity android:name=".activity.hottechnology.PhtotViewTestActivity"/>
+        <activity android:name=".activity.hottechnology.CircleImageViewTestActivity"/>
+
         <!-- 8.1短信验证配置start -->
         <activity
             android:name="com.mob.tools.MobUIShell"

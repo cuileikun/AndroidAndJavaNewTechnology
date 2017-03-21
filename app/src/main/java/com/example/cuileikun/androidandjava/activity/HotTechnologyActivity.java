@@ -6,7 +6,9 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.example.cuileikun.androidandjava.R;
+import com.example.cuileikun.androidandjava.activity.hottechnology.CircleImageViewTestActivity;
 import com.example.cuileikun.androidandjava.activity.hottechnology.CustomListViewActivity;
+import com.example.cuileikun.androidandjava.activity.hottechnology.PhtotViewTestActivity;
 import com.example.cuileikun.androidandjava.activity.hottechnology.ProgramFrameActivity;
 import com.example.cuileikun.androidandjava.activity.hottechnology.ReportPictureActivity;
 import com.example.cuileikun.androidandjava.activity.hottechnology.TestActivity;
@@ -24,6 +26,8 @@ public class HotTechnologyActivity extends QkActivity implements View.OnClickLis
     private RelativeLayout testThree;
     private RelativeLayout report_picture;//上传图片demo
     private RelativeLayout programFrame;//框架模块
+    private RelativeLayout github_photoview_rl;//github开源项目photoview  https://github.com/chrisbanes/PhotoView
+    private RelativeLayout github_circleimageview_rl;//github开源项目CircleImageView  https://github.com/hdodenhof/CircleImageView
 
     @Override
     public void initViews() {
@@ -33,6 +37,9 @@ public class HotTechnologyActivity extends QkActivity implements View.OnClickLis
         testThree = (RelativeLayout) findViewById(R.id.day_three_rl);
         report_picture = (RelativeLayout) findViewById(R.id.report_picture);
         programFrame = (RelativeLayout) findViewById(R.id.day_five_rl);
+        github_photoview_rl = (RelativeLayout) findViewById(R.id.github_photoview_rl);
+        github_circleimageview_rl = (RelativeLayout) findViewById(R.id.github_circleimageview_rl);
+
     }
 
     @Override
@@ -50,6 +57,8 @@ public class HotTechnologyActivity extends QkActivity implements View.OnClickLis
         testThree.setOnClickListener(HotTechnologyActivity.this);
         report_picture.setOnClickListener(HotTechnologyActivity.this);
         programFrame.setOnClickListener(HotTechnologyActivity.this);
+        github_photoview_rl.setOnClickListener(HotTechnologyActivity.this);
+        github_circleimageview_rl.setOnClickListener(HotTechnologyActivity.this);
     }
 
 
@@ -84,7 +93,13 @@ public class HotTechnologyActivity extends QkActivity implements View.OnClickLis
             case R.id.day_five_rl://5，常用框架
                 startActivity(new Intent(mContext, ProgramFrameActivity.class));
                 break;
+            case R.id.github_photoview_rl://6，github开源项目photoview
+                startActivity(new Intent(mContext, PhtotViewTestActivity.class));
+                break;
 
+            case R.id.github_circleimageview_rl://7，github开源项目CircleImageView
+                startActivity(new Intent(mContext, CircleImageViewTestActivity.class));
+                break;
 
         }
     }
