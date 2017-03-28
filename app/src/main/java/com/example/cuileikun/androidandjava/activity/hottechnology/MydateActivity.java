@@ -9,6 +9,9 @@ import com.example.cuileikun.androidandjava.R;
 import com.example.cuileikun.androidandjava.view.ChangeDatePopwindow;
 import com.qk.applibrary.activity.QkActivity;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * 作者：popular cui
  * 时间：2017/3/28 13:31
@@ -30,6 +33,11 @@ public class MydateActivity extends QkActivity {
     public void initViews() {
         selectDate= (TextView) findViewById(R.id.selectDate);
         tv_date = (TextView) findViewById(R.id.tv_date);
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        //获取当前时间
+        Date curDate = new Date(System.currentTimeMillis());
+        String str = formatter.format(curDate);
+        tv_date.setText(str);
     }
 
 
