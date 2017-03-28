@@ -234,7 +234,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv6"
                     android:gravity="center_vertical"
-                    android:text="github_photoview_rl"
+                    android:text="6github_photoview_rl"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -272,7 +272,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv7"
                     android:gravity="center_vertical"
-                    android:text="github_circleimageview_rl"
+                    android:text="7github_circleimageview_rl"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -286,7 +286,7 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/day_eight_rl"
+                android:id="@+id/github_shengshixian_rl"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_30_dip"
                 android:layout_marginLeft="@dimen/dimen_13_dip"
@@ -310,7 +310,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv8"
                     android:gravity="center_vertical"
-                    android:text="day08"
+                    android:text="8省市县三级联动"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 

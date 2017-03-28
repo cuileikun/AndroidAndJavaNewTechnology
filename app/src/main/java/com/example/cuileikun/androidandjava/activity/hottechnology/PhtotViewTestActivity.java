@@ -11,6 +11,7 @@ import com.qk.applibrary.activity.QkActivity;
  * 作者：popular cui
  * 时间：2017/3/21 13:56
  * 功能:PhtotView 随手指移动而缩放图片大小的类库
+ * github地址：https://github.com/cuileikun/PhotoView
  */
 public class PhtotViewTestActivity extends QkActivity{
 

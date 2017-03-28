@@ -7,6 +7,7 @@ import android.widget.RelativeLayout;
 
 import com.example.cuileikun.androidandjava.R;
 import com.example.cuileikun.androidandjava.activity.hottechnology.CircleImageViewTestActivity;
+import com.example.cuileikun.androidandjava.activity.hottechnology.CityPickerActivity;
 import com.example.cuileikun.androidandjava.activity.hottechnology.CustomListViewActivity;
 import com.example.cuileikun.androidandjava.activity.hottechnology.PhtotViewTestActivity;
 import com.example.cuileikun.androidandjava.activity.hottechnology.ProgramFrameActivity;
@@ -28,6 +29,7 @@ public class HotTechnologyActivity extends QkActivity implements View.OnClickLis
     private RelativeLayout programFrame;//框架模块
     private RelativeLayout github_photoview_rl;//github开源项目photoview  https://github.com/chrisbanes/PhotoView
     private RelativeLayout github_circleimageview_rl;//github开源项目CircleImageView  https://github.com/hdodenhof/CircleImageView
+    private RelativeLayout github_shengshixian_rl;//github开源项目省市县三级联动  https://github.com/cuileikun/CityPickerWebView
 
     @Override
     public void initViews() {
@@ -39,6 +41,7 @@ public class HotTechnologyActivity extends QkActivity implements View.OnClickLis
         programFrame = (RelativeLayout) findViewById(R.id.day_five_rl);
         github_photoview_rl = (RelativeLayout) findViewById(R.id.github_photoview_rl);
         github_circleimageview_rl = (RelativeLayout) findViewById(R.id.github_circleimageview_rl);
+        github_shengshixian_rl = (RelativeLayout) findViewById(R.id.github_shengshixian_rl);
 
     }
 
@@ -59,6 +62,7 @@ public class HotTechnologyActivity extends QkActivity implements View.OnClickLis
         programFrame.setOnClickListener(HotTechnologyActivity.this);
         github_photoview_rl.setOnClickListener(HotTechnologyActivity.this);
         github_circleimageview_rl.setOnClickListener(HotTechnologyActivity.this);
+        github_shengshixian_rl.setOnClickListener(HotTechnologyActivity.this);
     }
 
 
@@ -101,6 +105,9 @@ public class HotTechnologyActivity extends QkActivity implements View.OnClickLis
                 startActivity(new Intent(mContext, CircleImageViewTestActivity.class));
                 break;
 
+            case R.id.github_shengshixian_rl://8，github开源项目省市县三级联动
+                startActivity(new Intent(mContext, CityPickerActivity.class));
+                break;
         }
     }
 }
