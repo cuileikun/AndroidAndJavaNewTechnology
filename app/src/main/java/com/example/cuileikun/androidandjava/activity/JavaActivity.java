@@ -1,15 +1,14 @@
 package com.example.cuileikun.androidandjava.activity;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-
 import com.example.cuileikun.androidandjava.R;
+import com.qk.applibrary.activity.QkActivity;
 
-public class JavaActivity extends AppCompatActivity {
+public class JavaActivity extends QkActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_java);
+    public int getLayoutId() {
+        return R.layout.activity_java;
     }
+
+
 }
