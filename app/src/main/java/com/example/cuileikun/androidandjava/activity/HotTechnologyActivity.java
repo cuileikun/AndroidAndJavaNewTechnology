@@ -9,6 +9,7 @@ import com.example.cuileikun.androidandjava.R;
 import com.example.cuileikun.androidandjava.activity.hottechnology.CircleImageViewTestActivity;
 import com.example.cuileikun.androidandjava.activity.hottechnology.CityPickerActivity;
 import com.example.cuileikun.androidandjava.activity.hottechnology.CustomListViewActivity;
+import com.example.cuileikun.androidandjava.activity.hottechnology.MydateActivity;
 import com.example.cuileikun.androidandjava.activity.hottechnology.PhtotViewTestActivity;
 import com.example.cuileikun.androidandjava.activity.hottechnology.ProgramFrameActivity;
 import com.example.cuileikun.androidandjava.activity.hottechnology.ReportPictureActivity;
@@ -30,6 +31,7 @@ public class HotTechnologyActivity extends QkActivity implements View.OnClickLis
     private RelativeLayout github_photoview_rl;//github开源项目photoview  https://github.com/chrisbanes/PhotoView
     private RelativeLayout github_circleimageview_rl;//github开源项目CircleImageView  https://github.com/hdodenhof/CircleImageView
     private RelativeLayout github_shengshixian_rl;//github开源项目省市县三级联动  https://github.com/cuileikun/CityPickerWebView
+    private RelativeLayout csdn_nianyueri_rl;//csdn年月日三级联动  http://download.csdn.net/detail/hubeiqiyuan/9598546
 
     @Override
     public void initViews() {
@@ -42,6 +44,7 @@ public class HotTechnologyActivity extends QkActivity implements View.OnClickLis
         github_photoview_rl = (RelativeLayout) findViewById(R.id.github_photoview_rl);
         github_circleimageview_rl = (RelativeLayout) findViewById(R.id.github_circleimageview_rl);
         github_shengshixian_rl = (RelativeLayout) findViewById(R.id.github_shengshixian_rl);
+        csdn_nianyueri_rl = (RelativeLayout) findViewById(R.id.csdn_nianyueri_rl);
 
     }
 
@@ -63,6 +66,7 @@ public class HotTechnologyActivity extends QkActivity implements View.OnClickLis
         github_photoview_rl.setOnClickListener(HotTechnologyActivity.this);
         github_circleimageview_rl.setOnClickListener(HotTechnologyActivity.this);
         github_shengshixian_rl.setOnClickListener(HotTechnologyActivity.this);
+        csdn_nianyueri_rl.setOnClickListener(HotTechnologyActivity.this);
     }
 
 
@@ -108,6 +112,11 @@ public class HotTechnologyActivity extends QkActivity implements View.OnClickLis
             case R.id.github_shengshixian_rl://8，github开源项目省市县三级联动
                 startActivity(new Intent(mContext, CityPickerActivity.class));
                 break;
+            case R.id.csdn_nianyueri_rl://9，csdn年月日三级联动
+                startActivity(new Intent(mContext, MydateActivity.class));
+                break;
+
+
         }
     }
 }

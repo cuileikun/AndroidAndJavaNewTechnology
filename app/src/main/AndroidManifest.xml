@@ -120,6 +120,7 @@
         <activity android:name=".activity.hottechnology.PhtotViewTestActivity"/>
         <activity android:name=".activity.hottechnology.CircleImageViewTestActivity"/>
         <activity android:name=".activity.hottechnology.CityPickerActivity"/>
+        <activity android:name=".activity.hottechnology.MydateActivity"/>
 
         <!-- 8.1短信验证配置start -->
         <activity
