@@ -122,6 +122,7 @@
         <activity android:name=".activity.hottechnology.CityPickerActivity"/>
         <activity android:name=".activity.hottechnology.MydateActivity"/>
         <activity android:name=".activity.hottechnology.MyEditTextActivity"/>
+        <activity android:name=".activity.hottechnology.emoji.EmojiTestActivity"/>
 
         <!-- 8.1短信验证配置start -->
         <activity

@@ -400,7 +400,7 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/day_eleven_rl"
+                android:id="@+id/emoji_edit_text_rl"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_30_dip"
                 android:layout_marginLeft="@dimen/dimen_13_dip"
@@ -424,7 +424,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv11"
                     android:gravity="center_vertical"
-                    android:text="day11"
+                    android:text="11github EmojiEditText"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 

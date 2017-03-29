@@ -34,6 +34,7 @@ public class HotTechnologyActivity extends QkActivity implements View.OnClickLis
     private RelativeLayout github_shengshixian_rl;//github开源项目省市县三级联动  https://github.com/cuileikun/CityPickerWebView
     private RelativeLayout csdn_nianyueri_rl;//csdn年月日三级联动  http://download.csdn.net/detail/hubeiqiyuan/9598546
     private RelativeLayout my_edit_text_rl;//github开源控件 MyEditText  https://github.com/cuileikun/MyEditText
+    private RelativeLayout emoji_edit_text_rl;//github开源控件 EmojiEditText https://github.com/cuileikun/EmojiEditText
 
     @Override
     public void initViews() {
@@ -48,7 +49,7 @@ public class HotTechnologyActivity extends QkActivity implements View.OnClickLis
         github_shengshixian_rl = (RelativeLayout) findViewById(R.id.github_shengshixian_rl);
         csdn_nianyueri_rl = (RelativeLayout) findViewById(R.id.csdn_nianyueri_rl);
         my_edit_text_rl = (RelativeLayout) findViewById(R.id.my_edit_text_rl);
-
+        emoji_edit_text_rl = (RelativeLayout) findViewById(R.id.emoji_edit_text_rl);
     }
 
     @Override
@@ -71,6 +72,7 @@ public class HotTechnologyActivity extends QkActivity implements View.OnClickLis
         github_shengshixian_rl.setOnClickListener(HotTechnologyActivity.this);
         csdn_nianyueri_rl.setOnClickListener(HotTechnologyActivity.this);
         my_edit_text_rl.setOnClickListener(HotTechnologyActivity.this);
+        emoji_edit_text_rl.setOnClickListener(HotTechnologyActivity.this);
     }
 
 
@@ -124,6 +126,9 @@ public class HotTechnologyActivity extends QkActivity implements View.OnClickLis
                 startActivity(new Intent(mContext, MyEditTextActivity.class));
                 break;
 
+            case R.id.emoji_edit_text_rl://11，github EmojiEditText
+//                startActivity(new Intent(mContext, EmojiTestActivity.class));
+                break;
 
         }
     }
