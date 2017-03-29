@@ -1,1 +1,1 @@
-include ':app', ':applibrary', ':mobsmsapp', ':cuisharesdktest', ':baidumapsapp'
+include ':app', ':applibrary', ':mobsmsapp', ':cuisharesdktest', ':baidumapsapp', ':easyrecyclerviewdemo', ':easyrecyclerview'
