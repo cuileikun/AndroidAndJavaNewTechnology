@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="android_framework_java3rd">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../applibrary/libs/android_framework_java3rd.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

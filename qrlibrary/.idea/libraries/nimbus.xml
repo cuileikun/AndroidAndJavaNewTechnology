@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="nimbus">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../applibrary/libs/nimbus.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
