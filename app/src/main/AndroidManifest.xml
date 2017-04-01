@@ -98,6 +98,8 @@
         <activity android:name=".activity.HotTechnologyActivity" />
         <!-- 8常用三方类库 -->
         <activity android:name=".activity.ThirdLiarbryActivity" />
+        <!-- 8.8 二维码 -->
+        <activity android:name=".activity.thirdliarbry.ZXingTestActivity"/>
         <!-- 9大神demo -->
         <activity android:name=".activity.DaShenDemoActivity" />
         <!-- 7热门技术点 自定义listView -->

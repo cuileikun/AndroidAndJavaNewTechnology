@@ -7,6 +7,7 @@ import android.widget.RelativeLayout;
 
 import com.example.cuileikun.androidandjava.R;
 import com.example.cuileikun.androidandjava.activity.thirdliarbry.SmsVerificationsActivity;
+import com.example.cuileikun.androidandjava.activity.thirdliarbry.ZXingTestActivity;
 import com.qk.applibrary.activity.QkActivity;
 import com.qk.applibrary.listener.TopbarImplListener;
 import com.qk.applibrary.util.CommonUtil;
@@ -19,6 +20,7 @@ public class ThirdLiarbryActivity extends QkActivity implements View.OnClickList
     private RelativeLayout sms_verification_rl;//1，短信验证
     private RelativeLayout rl_baidu_locate;//百度地图
     private RelativeLayout three_share_rl;//三方分享
+    private RelativeLayout er_wei_ma_rl;//二维码扫描
 
     @Override
     public void initViews() {
@@ -28,6 +30,7 @@ public class ThirdLiarbryActivity extends QkActivity implements View.OnClickList
         sms_verification_rl = (RelativeLayout) findViewById(R.id.sms_verification_rl);
         rl_baidu_locate = (RelativeLayout) findViewById(R.id.rl_baidu_locate);
         three_share_rl = (RelativeLayout) findViewById(R.id.three_share_rl);
+        er_wei_ma_rl = (RelativeLayout) findViewById(R.id.er_wei_ma_rl);
     }
 
     @Override
@@ -41,6 +44,7 @@ public class ThirdLiarbryActivity extends QkActivity implements View.OnClickList
         sms_verification_rl.setOnClickListener(ThirdLiarbryActivity.this);
         rl_baidu_locate.setOnClickListener(ThirdLiarbryActivity.this);
         three_share_rl.setOnClickListener(ThirdLiarbryActivity.this);
+        er_wei_ma_rl.setOnClickListener(ThirdLiarbryActivity.this);
 
     }
 
@@ -72,6 +76,10 @@ public class ThirdLiarbryActivity extends QkActivity implements View.OnClickList
                 CommonUtil.sendToast(mContext,"项目已经导入和百度地图官方demo app，可以独立运行");
                 break;
 
+            case R.id.er_wei_ma_rl:
+//                startActivity(new Intent(ThirdLiarbryActivity.this,ZXingTestActivity.class));
+                startActivity(new Intent(ThirdLiarbryActivity.this,ZXingTestActivity.class));
+                break;
         }
 
     }

@@ -2,4 +2,8 @@
     <string name="app_name">AndroidAndJava</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <!-- BaseAty dialog 的确定取消按钮  -->
+    <string name="base_ac_cancel">取消</string>
+    <string name="base_ac_confirm">确定</string>
 </resources>
