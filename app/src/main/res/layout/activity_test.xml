@@ -1,18 +1,480 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".activity.hottechnology.TestActivity">
+    style="@style/fill_fill"
+    android:background="#ededed"
+    android:orientation="vertical">
 
-    <TextView
-        android:text="#dddddd"
-        android:id="@+id/text_test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <com.qk.applibrary.widget.TopbarView
+        android:id="@+id/top_bar_view"
+        style="@style/wrap_wrap" />
 
-</RelativeLayout>
+    <ScrollView
+        android:id="@+id/sc_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/custom_listview_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_marginRight="@dimen/dimen_13_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:background="@drawable/mybelt_bg">
+
+                <ImageView
+                    android:id="@+id/room_iv"
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:src="@drawable/qq_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:layout_toRightOf="@+id/room_iv"
+                    android:gravity="center_vertical"
+                    android:text="001"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_8_dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/time_display_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_marginRight="@dimen/dimen_13_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:background="@drawable/mybelt_bg">
+
+                <ImageView
+                    android:id="@+id/erery_day_reconnoitore_list_iv"
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:src="@drawable/qq_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:layout_toRightOf="@+id/erery_day_reconnoitore_list_iv"
+                    android:gravity="center_vertical"
+                    android:text="002"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_8_dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/day_three_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_marginRight="@dimen/dimen_13_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:background="@drawable/mybelt_bg">
+
+                <ImageView
+                    android:id="@+id/belt_iv"
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:src="@drawable/qq_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:layout_toRightOf="@+id/belt_iv"
+                    android:gravity="center_vertical"
+                    android:text="003"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_8_dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/report_picture"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_marginRight="@dimen/dimen_13_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:background="@drawable/mybelt_bg">
+
+                <ImageView
+                    android:id="@+id/inverstigation_iv"
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:src="@drawable/qq_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:layout_toRightOf="@+id/inverstigation_iv"
+                    android:gravity="center_vertical"
+                    android:text="004"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_8_dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/day_five_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_marginRight="@dimen/dimen_13_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:background="@drawable/mybelt_bg">
+
+                <ImageView
+                    android:id="@+id/inverstigation_iv5"
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:src="@drawable/qq_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:layout_toRightOf="@+id/inverstigation_iv5"
+                    android:gravity="center_vertical"
+                    android:text="005"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_8_dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/github_photoview_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_marginRight="@dimen/dimen_13_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:background="@drawable/mybelt_bg">
+
+                <ImageView
+                    android:id="@+id/inverstigation_iv6"
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:src="@drawable/qq_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:layout_toRightOf="@+id/inverstigation_iv6"
+                    android:gravity="center_vertical"
+                    android:text="006"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_8_dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/github_circleimageview_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_marginRight="@dimen/dimen_13_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:background="@drawable/mybelt_bg">
+
+                <ImageView
+                    android:id="@+id/inverstigation_iv7"
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:src="@drawable/qq_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:layout_toRightOf="@+id/inverstigation_iv7"
+                    android:gravity="center_vertical"
+                    android:text="007"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_8_dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/github_shengshixian_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_marginRight="@dimen/dimen_13_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:background="@drawable/mybelt_bg">
+
+                <ImageView
+                    android:id="@+id/inverstigation_iv8"
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:src="@drawable/qq_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:layout_toRightOf="@+id/inverstigation_iv8"
+                    android:gravity="center_vertical"
+                    android:text="008"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_8_dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/csdn_nianyueri_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_marginRight="@dimen/dimen_13_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:background="@drawable/mybelt_bg">
+
+                <ImageView
+                    android:id="@+id/inverstigation_iv9"
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:src="@drawable/qq_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:layout_toRightOf="@+id/inverstigation_iv9"
+                    android:gravity="center_vertical"
+                    android:text="009"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_8_dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_edit_text_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_marginRight="@dimen/dimen_13_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:background="@drawable/mybelt_bg">
+
+                <ImageView
+                    android:id="@+id/inverstigation_iv10"
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:src="@drawable/qq_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:layout_toRightOf="@+id/inverstigation_iv10"
+                    android:gravity="center_vertical"
+                    android:text="010"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_8_dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/emoji_edit_text_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_marginRight="@dimen/dimen_13_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:background="@drawable/mybelt_bg">
+
+                <ImageView
+                    android:id="@+id/inverstigation_iv11"
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:src="@drawable/qq_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:layout_toRightOf="@+id/inverstigation_iv11"
+                    android:gravity="center_vertical"
+                    android:text="011 "
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_8_dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/day_twelve_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_marginRight="@dimen/dimen_13_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:background="@drawable/mybelt_bg">
+
+                <ImageView
+                    android:id="@+id/inverstigation_iv12"
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:src="@drawable/qq_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:layout_toRightOf="@+id/inverstigation_iv12"
+                    android:gravity="center_vertical"
+                    android:text="012"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_8_dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

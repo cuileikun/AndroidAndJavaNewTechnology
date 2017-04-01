@@ -120,7 +120,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/belt_iv"
                     android:gravity="center_vertical"
-                    android:text="3day03"
+                    android:text="3自定义控件"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
