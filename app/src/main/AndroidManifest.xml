@@ -99,7 +99,7 @@
         <!-- 8常用三方类库 -->
         <activity android:name=".activity.ThirdLiarbryActivity" />
         <!-- 8.8 二维码 -->
-        <activity android:name=".activity.thirdliarbry.ZXingTestActivity"/>
+        <activity android:name=".activity.thirdliarbry.ZXingTestActivity" />
         <!-- 9大神demo -->
         <activity android:name=".activity.DaShenDemoActivity" />
         <!-- 7热门技术点 自定义listView -->
@@ -116,15 +116,17 @@
         <activity android:name=".activity.hottechnology.InterfaceFrameFirstActivity" />
         <activity android:name=".activity.hottechnology.InterfaceFrameSecondActivity" />
         <activity android:name=".activity.hottechnology.NetWorkFrameActivity" />
-        <activity android:name=".activity.hottechnology.ImageProcessFrameworkActivity"/>
-        <activity android:name=".activity.hottechnology.GlideTestActivitry"/>
-        <activity android:name=".activity.hottechnology.GuoLinGlideFirstActivity"/>
-        <activity android:name=".activity.hottechnology.PhtotViewTestActivity"/>
-        <activity android:name=".activity.hottechnology.CircleImageViewTestActivity"/>
-        <activity android:name=".activity.hottechnology.CityPickerActivity"/>
-        <activity android:name=".activity.hottechnology.MydateActivity"/>
-        <activity android:name=".activity.hottechnology.MyEditTextActivity"/>
-        <activity android:name=".activity.hottechnology.emoji.EmojiTestActivity"/>
+        <activity android:name=".activity.hottechnology.ImageProcessFrameworkActivity" />
+        <activity android:name=".activity.hottechnology.GlideTestActivitry" />
+        <activity android:name=".activity.hottechnology.GuoLinGlideFirstActivity" />
+        <activity android:name=".activity.hottechnology.PhtotViewTestActivity" />
+        <activity android:name=".activity.hottechnology.CircleImageViewTestActivity" />
+        <activity android:name=".activity.hottechnology.CityPickerActivity" />
+        <activity android:name=".activity.hottechnology.MydateActivity" />
+        <activity android:name=".activity.hottechnology.MyEditTextActivity" />
+        <activity android:name=".activity.hottechnology.emoji.EmojiTestActivity" />
+        <!-- 自定义物流进度 -->
+        <activity android:name=".activity.CustomView.LogisticsProgressActivity" />
 
         <!-- 8.1短信验证配置start -->
         <activity
@@ -133,8 +135,8 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <!-- 8.1短信验证配置stop -->
-        <activity android:name=".activity.thirdliarbry.SmsVerificationsActivity"/>
-        <activity android:name=".activity.thirdliarbry.LocateActivity"/>
+        <activity android:name=".activity.thirdliarbry.SmsVerificationsActivity" />
+        <activity android:name=".activity.thirdliarbry.LocateActivity" />
     </application>
 
 </manifest>

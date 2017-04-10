@@ -20,7 +20,7 @@
             android:orientation="vertical">
 
             <RelativeLayout
-                android:id="@+id/custom_listview_rl"
+                android:id="@+id/first_custom_view_rl"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_30_dip"
                 android:layout_marginLeft="@dimen/dimen_13_dip"
@@ -44,7 +44,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/room_iv"
                     android:gravity="center_vertical"
-                    android:text="001"
+                    android:text="1，物流进度"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
