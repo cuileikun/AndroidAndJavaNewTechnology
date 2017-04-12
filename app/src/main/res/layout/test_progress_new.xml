@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#f1f1f1"
-    android:orientation="horizontal"
-    android:paddingTop="5dp">
+    android:orientation="horizontal">
 
     <com.qk.applibrary.widget.TopbarView
         android:id="@+id/top_bar_view"
@@ -16,269 +15,280 @@
         android:layout_below="@+id/top_bar_view"
         android:scrollbars="none">
 
+        <LinearLayout
+            style="@style/fill_wrap"
+            android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/tv_address"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="房间地址：南宁路501弄27号201室E室" />
-
-            <TextView
-                android:id="@+id/tv_client_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_address"
-                android:layout_marginTop="12dp"
-                android:text="客户姓名：小锐锐" />
-
-
-            <LinearLayout
-                android:id="@+id/left"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_client_name"
-                android:layout_marginTop="12dp"
-                android:orientation="vertical"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp">
-                <!--清退申请 on -->
-                <ImageView
-                    android:id="@+id/stepicon_iv"
-                    android:layout_width="14dp"
-                    android:layout_height="14dp"
-                    android:background="@drawable/retreat_application" />
-
-                <View
-                    android:id="@+id/line_v"
-                    android:layout_width="2dp"
-                    android:layout_height="28dp"
-                    android:layout_gravity="center_horizontal"
-                    android:background="#f87764"
-                    android:visibility="visible" />
-
-
-                <ImageView
-                    android:id="@+id/stepicon_iv2"
-                    android:layout_width="8dp"
-                    android:layout_height="8dp"
-                    android:layout_marginLeft="3dp"
-                    android:background="@drawable/retreat_application_small" />
-
-                <View
-                    android:id="@+id/line_v2"
-                    android:layout_width="2dp"
-                    android:layout_height="63dp"
-                    android:layout_gravity="center_horizontal"
-                    android:background="#f87764"
-                    android:visibility="visible" />
-
-                <!--清退申请 off -->
-
-
-                <!--审批 on -->
-
-                <ImageView
-                    android:id="@+id/stepicon_iv3"
-                    android:layout_width="14dp"
-                    android:layout_height="14dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/approval" />
-
-                <View
-                    android:id="@+id/line_v3"
-                    android:layout_width="2dp"
-                    android:layout_height="28dp"
-                    android:layout_gravity="center_horizontal"
-                    android:background="#fd9724"
-                    android:visibility="visible" />
-
-                <ImageView
-                    android:id="@+id/stepicon_iv4"
-                    android:layout_width="8dp"
-                    android:layout_height="8dp"
-                    android:layout_marginLeft="3dp"
-                    android:background="@drawable/approval_small" />
-
-                <View
-                    android:id="@+id/line_v4"
-                    android:layout_width="2dp"
-                    android:layout_height="63dp"
-                    android:layout_gravity="center_horizontal"
-                    android:background="#fd9724"
-                    android:visibility="visible" />
-
-                <!--审批 off -->
-
-                <!--财务确认结算单 on -->
-
-
-                <ImageView
-                    android:id="@+id/stepicon_iv5"
-                    android:layout_width="14dp"
-                    android:layout_height="14dp"
-                    android:layout_marginTop="5dp"
-                    android:background="@drawable/financial_confirmation_statement" />
-
-                <View
-                    android:id="@+id/line_v5"
-                    android:layout_width="2dp"
-                    android:layout_height="28dp"
-                    android:layout_gravity="center_horizontal"
-                    android:background="#967db2"
-                    android:visibility="visible" />
-
-                <ImageView
-                    android:id="@+id/stepicon_iv6"
-                    android:layout_width="8dp"
-                    android:layout_height="8dp"
-                    android:layout_marginLeft="3dp"
-                    android:background="@drawable/financial_confirmation_statement_small" />
-
-                <View
-                    android:id="@+id/line_v6"
-                    android:layout_width="2dp"
-                    android:layout_height="63dp"
-                    android:layout_gravity="center_horizontal"
-                    android:background="#967db2"
-                    android:visibility="visible" />
-
-
-                <!--财务确认结算单 off -->
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_client_name"
-                android:layout_marginLeft="18dp"
-                android:layout_marginTop="12dp"
-                android:layout_toRightOf="@+id/left"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp">
-                <!--清退申请 on -->
-                <TextView
-                    android:id="@+id/description_tv"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="清退申请"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
+                android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/description_tv1"
+                    android:id="@+id/tv_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:text="地主房管员：张三"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
+                    android:layout_marginLeft="@dimen/dimen_14_dip"
+                    android:layout_marginTop="@dimen/dimen_12_dip"
+                    android:text="房间地址：南宁路501弄27号201室E室" />
 
                 <TextView
-                    android:id="@+id/description_tv2"
+                    android:id="@+id/tv_client_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="申请时间：2016-03-26 11:22:33"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
-                <!--清退申请 off -->
+                    android:layout_below="@+id/tv_address"
+                    android:layout_marginLeft="@dimen/dimen_14_dip"
+                    android:layout_marginTop="@dimen/dimen_12_dip"
+                    android:text="客户姓名：小锐锐" />
 
 
-                <!--审批 on -->
-
-                <TextView
-                    android:id="@+id/description_tv3"
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:id="@+id/left"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="43dp"
-                    android:text="审批"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
+                    android:layout_below="@+id/tv_client_name"
+                    android:layout_marginBottom="@dimen/dimen_46_dip"
+                    android:layout_marginLeft="@dimen/dimen_18_dip"
+                    android:layout_marginTop="@dimen/dimen_12_dip"
+                    android:background="#f1f1f1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen_10_dip"
+                    android:paddingRight="@dimen/dimen_10_dip">
+                    <!--清退申请 on -->
+                    <ImageView
+                        android:id="@+id/stepicon_iv"
+                        android:layout_width="@dimen/dimen_14_dip"
+                        android:layout_height="@dimen/dimen_14_dip"
+                        android:background="@drawable/retreat_application" />
 
-                <TextView
-                    android:id="@+id/description_tv4"
-                    android:layout_width="match_parent"
+                    <View
+                        android:id="@+id/line_v"
+                        android:layout_width="@dimen/dimen_2_dip"
+                        android:layout_height="@dimen/dimen_28_dip"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#f87764"
+                        android:visibility="visible" />
+
+
+                    <ImageView
+                        android:id="@+id/stepicon_iv2"
+                        android:layout_width="@dimen/dimen_8_dip"
+                        android:layout_height="@dimen/dimen_8_dip"
+                        android:layout_marginLeft="@dimen/dimen_3_dip"
+                        android:background="@drawable/retreat_application_small" />
+
+                    <View
+                        android:id="@+id/line_v2"
+                        android:layout_width="@dimen/dimen_2_dip"
+                        android:layout_height="@dimen/dimen_63_dip"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#f87764"
+                        android:visibility="visible" />
+
+                    <!--清退申请 off -->
+
+
+                    <!--审批 on -->
+
+                    <ImageView
+                        android:id="@+id/stepicon_iv3"
+                        android:layout_width="@dimen/dimen_14_dip"
+                        android:layout_height="@dimen/dimen_14_dip"
+                        android:layout_marginTop="@dimen/dimen_5_dip"
+                        android:background="@drawable/approval" />
+
+                    <View
+                        android:id="@+id/line_v3"
+                        android:layout_width="@dimen/dimen_2_dip"
+                        android:layout_height="@dimen/dimen_28_dip"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#fd9724"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/stepicon_iv4"
+                        android:layout_width="@dimen/dimen_8_dip"
+                        android:layout_height="@dimen/dimen_8_dip"
+                        android:layout_marginLeft="@dimen/dimen_3_dip"
+                        android:background="@drawable/approval_small" />
+
+                    <View
+                        android:id="@+id/line_v4"
+                        android:layout_width="@dimen/dimen_2_dip"
+                        android:layout_height="@dimen/dimen_89_dip"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#fd9724"
+                        android:visibility="visible" />
+
+                    <!--审批 off -->
+
+                    <!--财务确认结算单 on -->
+
+
+                    <ImageView
+                        android:id="@+id/stepicon_iv5"
+                        android:layout_width="@dimen/dimen_14_dip"
+                        android:layout_height="@dimen/dimen_14_dip"
+                        android:layout_marginTop="@dimen/dimen_5_dip"
+                        android:background="@drawable/financial_confirmation_statement" />
+
+                    <View
+                        android:id="@+id/line_v5"
+                        android:layout_width="@dimen/dimen_2_dip"
+                        android:layout_height="@dimen/dimen_28_dip"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#967db2"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/stepicon_iv6"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/financial_confirmation_statement_small" />
+
+                    <View
+                        android:id="@+id/line_v6"
+                        android:layout_width="@dimen/dimen_2_dip"
+                        android:layout_height="@dimen/dimen_89_dip"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#967db2"
+                        android:visibility="visible" />
+
+
+                    <!--财务确认结算单 off -->
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:text="服务中心经理：李四"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
+                    android:layout_below="@+id/tv_client_name"
+                    android:layout_marginBottom="@dimen/dimen_46_dip"
+                    android:layout_marginLeft="@dimen/dimen_18_dip"
+                    android:layout_marginTop="@dimen/dimen_12_dip"
+                    android:layout_toRightOf="@+id/left"
+                    android:layout_weight="1"
+                    android:background="#f1f1f1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen_10_dip"
+                    android:paddingRight="@dimen/dimen_10_dip">
+                    <!--清退申请 on -->
+                    <TextView
+                        android:id="@+id/description_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="清退申请"
+                        android:textColor="#333333"
+                        android:textSize="15sp" />
 
-                <TextView
-                    android:id="@+id/description_tv5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="审批结果：通过"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/description_tv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_17_dip"
+                        android:text="地主房管员：张三"
+                        android:textColor="#333333"
+                        android:textSize="13sp" />
 
-                <TextView
-                    android:id="@+id/description_tv6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="审批时间：2016-03-26 11:22:33"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
-
-                <!--审批 off -->
-
-                <!--财务确认结算单 on -->
-
-                <TextView
-                    android:id="@+id/description_tv7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:text="财务确认结算单"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:id="@+id/description_tv8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="财务：李四"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:id="@+id/description_tv9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="确认结果：已确认"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:id="@+id/description_tv10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="确认时间：2016-03-26 11:22:33"
-                    android:textColor="#333333"
-                    android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/description_tv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5_dip"
+                        android:text="申请时间：2016-03-26 11:22:33"
+                        android:textColor="#333333"
+                        android:textSize="13sp" />
+                    <!--清退申请 off -->
 
 
-                <!--财务确认结算单 off -->
+                    <!--审批 on -->
+
+                    <TextView
+                        android:id="@+id/description_tv3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_37_dip"
+                        android:text="审批"
+                        android:textColor="#333333"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/description_tv4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_17_dip"
+                        android:text="服务中心经理：李四"
+                        android:textColor="#333333"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/description_tv5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5_dip"
+                        android:text="审批结果：通过"
+                        android:textColor="#333333"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/description_tv6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5_dip"
+                        android:text="审批时间：2016-03-26 11:22:33"
+                        android:textColor="#333333"
+                        android:textSize="13sp" />
+
+                    <!--审批 off -->
+
+                    <!--财务确认结算单 on -->
+
+                    <TextView
+                        android:id="@+id/description_tv7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_41_dip"
+                        android:text="财务确认结算单"
+                        android:textColor="#333333"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/description_tv8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_17_dip"
+                        android:text="财务：李四"
+                        android:textColor="#333333"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/description_tv9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5_dip"
+                        android:text="确认结果：已确认"
+                        android:textColor="#333333"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/description_tv10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5_dip"
+                        android:text="确认时间：2016-03-26 11:22:33"
+                        android:textColor="#333333"
+                        android:textSize="13sp" />
 
 
-            </LinearLayout>
+                    <!--财务确认结算单 off -->
 
 
-        </RelativeLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
     </ScrollView>
 
 </RelativeLayout>
