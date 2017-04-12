@@ -127,6 +127,8 @@
         <activity android:name=".activity.hottechnology.emoji.EmojiTestActivity" />
         <!-- 自定义物流进度 -->
         <activity android:name=".activity.CustomView.LogisticsProgressActivity" />
+        <!-- 自定义审批进度 -->
+        <activity android:name=".activity.CustomView.ApprovalProgressActivity" />
 
         <!-- 8.1短信验证配置start -->
         <activity

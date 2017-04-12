@@ -58,7 +58,7 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/time_display_rl"
+                android:id="@+id/second_custom_view__rl"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_30_dip"
                 android:layout_marginLeft="@dimen/dimen_13_dip"
@@ -82,7 +82,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/erery_day_reconnoitore_list_iv"
                     android:gravity="center_vertical"
-                    android:text="002"
+                    android:text="2，审批进度"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
