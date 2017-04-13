@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.qk.applibrary.widget.TopbarView
+        android:id="@+id/top_bar_view"
+        style="@style/fill_wrap" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar_view"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_17_dip"
+                android:layout_marginRight="@dimen/dimen_17_dip"
+                android:layout_marginTop="@dimen/dimen_13_dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_4_dip"
+                    android:text="退房信息"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+                <!--<View-->
+                <!--android:layout_width="@dimen/dimen_150_dip"-->
+                <!--android:layout_height="@dimen/dimen_1_dip"-->
+                <!--android:background="@color/grid_state_focused"-->
+                <!--/>-->
+                <ImageView
+                    android:layout_width="@dimen/dimen_130_dip"
+                    android:layout_height="@dimen/dimen_1_dip"
+                    android:src="@drawable/line" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/life"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_17_dip"
+                    android:layout_marginTop="@dimen/dimen_28_dip">
+
+                    <ImageView
+                        android:id="@+id/pre_ima1"
+                        android:layout_width="@dimen/dimen_18_dip"
+                        android:layout_height="@dimen/dimen_18_dip"
+                        android:src="@drawable/unfinished" />
+
+                    <ImageView
+                        android:id="@+id/pre_line1"
+                        android:layout_width="@dimen/dimen_2_dip"
+                        android:layout_height="@dimen/dimen_50_dip"
+                        android:layout_below="@+id/pre_ima1"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/unprgress" />
+
+                    <ImageView
+                        android:id="@+id/pre_ima2"
+                        android:layout_width="@dimen/dimen_18_dip"
+                        android:layout_height="@dimen/dimen_18_dip"
+                        android:layout_below="@+id/pre_line1"
+                        android:src="@drawable/unfinished" />
+
+                    <ImageView
+                        android:id="@+id/pre_line2"
+                        android:layout_width="@dimen/dimen_2_dip"
+                        android:layout_height="@dimen/dimen_53_dip"
+                        android:layout_below="@+id/pre_ima2"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/unprgress" />
+
+                    <ImageView
+                        android:id="@+id/pre_ima3"
+                        android:layout_width="@dimen/dimen_18_dip"
+                        android:layout_height="@dimen/dimen_18_dip"
+                        android:layout_below="@+id/pre_line2"
+                        android:src="@drawable/unfinished" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/life">
+
+                    <RelativeLayout
+                        android:id="@+id/cheout_apple"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_8_dip"
+                        android:layout_marginTop="@dimen/dimen_13_dip"
+                        android:onClick="Checkoutapply">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen_266_dip"
+                            android:layout_height="@dimen/dimen_45_dip"
+                            android:src="@drawable/checkpre" />
+
+                        <TextView
+                            android:id="@+id/checkout_shengqing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dimen_95_dip"
+                            android:textColor="#666666"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/check_audit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cheout_apple"
+                        android:layout_marginLeft="@dimen/dimen_8_dip"
+                        android:layout_marginTop="@dimen/dimen_25_dip"
+                        android:onClick="Checkoutaudit">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen_266_dip"
+                            android:layout_height="@dimen/dimen_45_dip"
+                            android:src="@drawable/checkpre" />
+
+                        <TextView
+                            android:id="@+id/checkout_shenhe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dimen_95_dip"
+                            android:textColor="#666666"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/check_audit"
+                        android:layout_marginLeft="@dimen/dimen_8_dip"
+                        android:layout_marginTop="@dimen/dimen_25_dip">
+
+                        <ImageView
+                            android:layout_width="@dimen/dimen_266_dip"
+                            android:layout_height="@dimen/dimen_45_dip"
+                            android:src="@drawable/checkpre" />
+
+                        <TextView
+                            android:id="@+id/tuikuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dimen_100_dip"
+                            android:textColor="#666666"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
