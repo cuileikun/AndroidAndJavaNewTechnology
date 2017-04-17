@@ -69,6 +69,8 @@
     <uses-permission android:name="android.permission.GET_TASKS" />
 
     <!-- 短信验证需要的权限stop -->
+    <!-- 发送短信需要的权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -86,6 +88,7 @@
         <activity android:name=".activity.JavaActivity" />
         <!-- 2android基础 -->
         <activity android:name=".activity.AndroidBaseActivity" />
+        <activity android:name=".activity.androidbase.AndroidBaseFirstActivity" />
         <!-- 3android项目 -->
         <activity android:name=".activity.AndroidProgramActivity" />
         <!-- 4传音项目 -->

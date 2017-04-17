@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入号码" />
+
+    <Button
+        android:id="@+id/btn_call_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="callphone" />
+
+
+    <EditText
+        android:id="@+id/et_num_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_25_dip"
+        android:hint="请输入号码" />
+
+    <EditText
+        android:id="@+id/et_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入内容" />
+
+
+    <Button
+        android:id="@+id/btn_send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sendmessage" />
+
+
+    <Button
+        android:id="@+id/btn_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_25_dip"
+        android:onClick="btnClick"
+        android:text="测试不常用的按钮点击事件" />
+
+
+</LinearLayout>

@@ -1,12 +1,18 @@
 package com.example.cuileikun.androidandjava.activity;
 
+import android.content.Intent;
+import android.view.View;
+import android.widget.RelativeLayout;
+
 import com.example.cuileikun.androidandjava.R;
+import com.example.cuileikun.androidandjava.activity.androidbase.AndroidBaseFirstActivity;
 import com.qk.applibrary.activity.QkActivity;
 import com.qk.applibrary.listener.TopbarImplListener;
 import com.qk.applibrary.widget.TopbarView;
 
-public class AndroidBaseActivity extends QkActivity {
+public class AndroidBaseActivity extends QkActivity implements View.OnClickListener {
     private TopbarView topbarView;
+    private RelativeLayout day_one_rl;
 
     @Override
     public int getLayoutId() {
@@ -16,6 +22,8 @@ public class AndroidBaseActivity extends QkActivity {
     @Override
     public void initViews() {
         topbarView = (TopbarView) findViewById(R.id.top_bar_view);
+        day_one_rl = (RelativeLayout) findViewById(R.id.day_one_rl);
+
     }
 
     @Override
@@ -26,6 +34,7 @@ public class AndroidBaseActivity extends QkActivity {
     @Override
     public void addListeners() {
         topbarView.setTopBarClickListener(topListener);
+        day_one_rl.setOnClickListener(AndroidBaseActivity.this);
     }
 
     private TopbarImplListener topListener = new TopbarImplListener() {
@@ -34,4 +43,18 @@ public class AndroidBaseActivity extends QkActivity {
             finish();
         }
     };
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.day_one_rl:
+                startActivity(new Intent(AndroidBaseActivity.this,AndroidBaseFirstActivity.class));
+                break;
+
+        }
+
+
+    }
+
+
 }
