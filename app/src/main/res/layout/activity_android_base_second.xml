@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="log" />
+
+    <Button
+        android:id="@+id/btn_user_login_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户登录data" />
+
+    <Button
+        android:id="@+id/btn_file_permission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文件权限" />
+
+    <Button
+        android:id="@+id/btn_user_sdcard_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户登录sdcard" />
+
+    <Button
+        android:id="@+id/btn_get_sdcard_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取sdcard空间" />
+
+    <Button
+        android:id="@+id/btn_user_sp_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户登录sp" />
+
+    <Button
+        android:id="@+id/btn_do_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xml操作" />
+
 
 </LinearLayout>
