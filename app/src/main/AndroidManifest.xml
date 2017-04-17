@@ -90,6 +90,15 @@
         <activity android:name=".activity.AndroidBaseActivity" />
         <activity android:name=".activity.androidbase.AndroidBaseFirstActivity" />
         <activity android:name=".activity.androidbase.AndroidBaseSecondActivity" />
+        <activity android:name=".activity.androidbase.LogActivity" />
+        <activity android:name=".activity.androidbase.UserLoginDataActivity" />
+        <activity android:name=".activity.androidbase.FilePermissionActivity" />
+        <activity android:name=".activity.androidbase.UserLoginSdcardActivity" />
+        <activity android:name=".activity.androidbase.GetSdcardSizeActivity" />
+        <activity android:name=".activity.androidbase.UserLoginSpActivity" />
+        <activity android:name=".activity.androidbase.DoXmlActivity" />
+
+
         <!-- 3android项目 -->
         <activity android:name=".activity.AndroidProgramActivity" />
         <!-- 4传音项目 -->

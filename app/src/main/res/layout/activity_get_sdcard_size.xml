@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_info1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第一种方式" />
+    <TextView
+        android:id="@+id/tv_info2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第二种方式" />
+    <Button
+        android:onClick="click1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第一种方式获取" />
+    <Button
+        android:onClick="click2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第二种方式获取" />
+
+</LinearLayout>

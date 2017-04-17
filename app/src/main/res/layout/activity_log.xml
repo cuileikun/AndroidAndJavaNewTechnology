@@ -1,6 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:onClick="click1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="verbose" />
+    <Button
+        android:onClick="click2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="debug" />
+    <Button
+        android:onClick="click3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="info" />
+    <Button
+        android:onClick="click4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="warn" />
+    <Button
+        android:onClick="click5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="error" />
+    <Button
+        android:onClick="click6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="System.out" />
+    <Button
+        android:onClick="click7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="System.err" />
+    <Button
+        android:onClick="click8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打印异常" />
 
 </LinearLayout>
