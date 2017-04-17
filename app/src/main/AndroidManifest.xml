@@ -89,6 +89,7 @@
         <!-- 2android基础 -->
         <activity android:name=".activity.AndroidBaseActivity" />
         <activity android:name=".activity.androidbase.AndroidBaseFirstActivity" />
+        <activity android:name=".activity.androidbase.AndroidBaseSecondActivity" />
         <!-- 3android项目 -->
         <activity android:name=".activity.AndroidProgramActivity" />
         <!-- 4传音项目 -->
