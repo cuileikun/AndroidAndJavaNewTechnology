@@ -97,6 +97,7 @@
         <activity android:name=".activity.androidbase.GetSdcardSizeActivity" />
         <activity android:name=".activity.androidbase.UserLoginSpActivity" />
         <activity android:name=".activity.androidbase.DoXmlActivity" />
+        <activity android:name=".activity.androidbase.AndroidBaseThirdActivity" />
 
 
         <!-- 3android项目 -->
