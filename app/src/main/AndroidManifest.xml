@@ -98,6 +98,10 @@
         <activity android:name=".activity.androidbase.UserLoginSpActivity" />
         <activity android:name=".activity.androidbase.DoXmlActivity" />
         <activity android:name=".activity.androidbase.AndroidBaseThirdActivity" />
+        <activity android:name=".activity.androidbase.SqliteActivity" />
+        <activity android:name=".activity.androidbase.ListviewActivity" />
+        <activity android:name=".activity.androidbase.ContactActivity" />
+        <activity android:name=".activity.androidbase.ArrayAdapterActivity" />
 
 
         <!-- 3android项目 -->

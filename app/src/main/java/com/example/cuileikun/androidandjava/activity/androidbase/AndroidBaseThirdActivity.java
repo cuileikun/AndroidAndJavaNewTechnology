@@ -1,6 +1,7 @@
 package com.example.cuileikun.androidandjava.activity.androidbase;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
@@ -50,13 +51,17 @@ public class AndroidBaseThirdActivity extends QkActivity implements View.OnClick
 
         switch (view.getId()) {
             case R.id.btn_sqlite:
+                startActivity(new Intent(AndroidBaseThirdActivity.this,SqliteActivity.class));
                 break;
             case R.id.btn_listview:
+                startActivity(new Intent(AndroidBaseThirdActivity.this,ListviewActivity.class));
                 break;
             case R.id.btn_btn_contact:
+                startActivity(new Intent(AndroidBaseThirdActivity.this,ContactActivity.class));
                 break;
 
             case R.id.btn_arrayAdapter:
+                startActivity(new Intent(AndroidBaseThirdActivity.this,ArrayAdapterActivity.class));
                 break;
 
         }
