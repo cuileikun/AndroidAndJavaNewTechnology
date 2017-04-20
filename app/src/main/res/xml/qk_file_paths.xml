@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 兼容Android7.0升级安装问题 -->
+<resources>
+    <paths>
+        <external-path
+            name="files_root"
+            path="Android/data/com.example.cuileikun.androidandjava/" />
+        <external-path
+            name="external_storage_root"
+            path="." />
+        <!-- yan  notice:  do not  edit     -->
+        <root-path
+            name="camera_photos"
+            path="" />
+    </paths>
+</resources>

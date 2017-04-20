@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.cuileikun.androidandjava">
 
     <!-- start-极光推送- Required 一些系统要求的权限，如访问网络等 -->
@@ -157,6 +158,20 @@
         <!-- 8.1短信验证配置stop -->
         <activity android:name=".activity.thirdliarbry.SmsVerificationsActivity" />
         <activity android:name=".activity.thirdliarbry.LocateActivity" />
+        <!-- 兼容Android7.0升级安装问题 on -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.cuileikun.androidandjava.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/qk_file_paths"
+                tools:replace="android:resource" />
+        </provider>
+        <!-- 兼容Android7.0升级安装问题 off -->
+
+
     </application>
 
 </manifest>
