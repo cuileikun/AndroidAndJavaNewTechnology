@@ -1,5 +1,6 @@
 package com.example.cuileikun.androidandjava.activity.hottechnology;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -24,6 +25,8 @@ import com.example.cuileikun.androidandjava.activity.Constant.QkConstant;
 import com.example.cuileikun.androidandjava.api.Connect;
 import com.example.cuileikun.androidandjava.api.Protocol;
 import com.example.cuileikun.androidandjava.utils.FileUtil;
+import com.example.cuileikun.androidandjava.utils.PermissionUtil;
+import com.example.cuileikun.androidandjava.utils.PermissionsChecker;
 import com.example.cuileikun.androidandjava.utils.PhotoUtil;
 import com.example.cuileikun.androidandjava.view.BigImageViewActivity;
 import com.qk.applibrary.activity.QkActivity;
@@ -44,6 +47,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+
 /**
  * 把图片以数组的方式提交给后台
  */
@@ -84,10 +88,13 @@ public class ReportPictureActivity extends QkActivity {
 
     @Override
     public void initData() {
+        //android 6.0权限问题
+        grantPermission();
         topbarView.setTopbarTitle("上传照片");
         inflater = LayoutInflater.from(this);
         addPhoto(null);
     }
+
 
     @Override
     public void addListeners() {
@@ -95,13 +102,14 @@ public class ReportPictureActivity extends QkActivity {
         submit.setOnClickListener(submitClistener);
         btn_summit_second.setOnClickListener(secondSummitListener);
     }
-View.OnClickListener secondSummitListener=new View.OnClickListener(){
 
-    @Override
-    public void onClick(View v) {
-        startActivity(new Intent(mContext,SecondSubmitActivity.class));
-    }
-};
+    View.OnClickListener secondSummitListener = new View.OnClickListener() {
+
+        @Override
+        public void onClick(View v) {
+            startActivity(new Intent(mContext, SecondSubmitActivity.class));
+        }
+    };
     View.OnClickListener submitClistener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -290,6 +298,23 @@ View.OnClickListener secondSummitListener=new View.OnClickListener(){
     private View.OnClickListener takePhotoListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
+
+            /**
+             * 动态申请权限 第三步
+             */
+            //判断相机权限是否打开
+            if (PermissionsChecker.checkIsLacksPermission(mContext, Manifest.permission.CAMERA)) {
+                CommonUtil.sendToast(mContext, "请打开拍照权限");
+                return;
+            }
+            if (PermissionsChecker.checkIsLacksPermission(mContext, Manifest.permission.READ_EXTERNAL_STORAGE) && PermissionsChecker.checkIsLacksPermission(mContext, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+                CommonUtil.sendToast(mContext,"请打开sdcard读写权限");
+                return;
+            }
+
+
+
+
             //检查图片数量是否大于5张
             if (photoFilePathList.size() > 4) {
                 CommonUtil.sendToast(ReportPictureActivity.this, "最多上传5张图片");
@@ -587,4 +612,39 @@ View.OnClickListener secondSummitListener=new View.OnClickListener(){
         }
         return currentLocation;
     }
+
+
+    /**
+     * 动态申请权限 第一步
+     */
+    public void grantPermission() {
+        PermissionUtil.requestPermissions(this,
+                new String[]{
+                        Manifest.permission.CAMERA,
+                        Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                        Manifest.permission.READ_EXTERNAL_STORAGE
+                });
+    }
+
+    /**
+     * 动态申请权限 第二步
+     */
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        for (int i = 0; i < permissions.length; i++) {
+            if (permissions[i] == Manifest.permission.CAMERA) {
+                if (grantResults[i] != 0) {
+                    CommonUtil.sendToast(mContext, "请打开拍照权限");
+                }
+            } else if (permissions[i] == Manifest.permission.WRITE_EXTERNAL_STORAGE || permissions[i] == Manifest.permission.READ_EXTERNAL_STORAGE) {
+                if (grantResults[i] != 0) {
+                    CommonUtil.sendToast(mContext, "请打开sdcard读写权限");
+                }
+            }
+        }
+    }
+
+
 }
